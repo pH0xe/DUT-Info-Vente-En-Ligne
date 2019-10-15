@@ -1,0 +1,9 @@
+200406|Petit éléphant|3|50|1.jpg|Eléphant 30*21*15cm, moderne, fabriqué au Guatemala
+200407|Boule de noël opaque|4|15|2.jpg|Boule en porcelaine de Limoge
+200408|Bougie floral|3|20|3.jpg|Bougie fabriqué à Grace au parfum hibiscus
+200409|Licorne LED|3|60|4.jpg|Licorne lumineuse à duré de vie de 5 ans
+200410|Montre de luxe|6|80|5.jpg|Montre de luxe fabriqué en France
+200411|Montre de luxe cadre argent|6|90|6.jpg|Montre de luxe fabriqué en France
+200412|Parapluie|6|0.5|7.jpg|Parapluie fabriqué en Chine
+200413|Casquette|6|6|8.jpg|Casquette de golf
+200414|Statut jeff koons|3|5000000|9.jpg|Oeuvre authentique avec certificat du célébre artiste
