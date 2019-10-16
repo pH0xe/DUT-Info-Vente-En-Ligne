@@ -8,8 +8,10 @@
   class DAO
   {
     private $db;
-    function __construct($path){
-    $database = "sqlite:$path";
+    function __construct(){
+      $paths = parse_ini_file("../config/config.ini");
+      $path = $paths["database_path"];
+      $database = "sqlite:$path";
       try {
         $this->db = new PDO($database);
       } catch (PDOException $e) {
