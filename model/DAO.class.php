@@ -7,14 +7,11 @@
    */
   class DAO
   {
-    $config = parse_ini_file('../config/config.ini');
     private $db;
-    private $database = "sqlite:".$config['database_path'];
-
-    function __construct()
-    {
+    function __construct($path){
+    $database = "sqlite:$path";
       try {
-        $this->db = new PDO($this->database);
+        $this->db = new PDO($database);
       } catch (PDOException $e) {
         die("Erreur de connexion : ".$e->getMessage());
       }
@@ -29,6 +26,7 @@
 
       return $result[0];
     }
-  }
 
+
+}
 ?>
