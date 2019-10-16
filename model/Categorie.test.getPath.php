@@ -1,9 +1,7 @@
 <?php
 include("Categorie.class.php");
 
-$paths = parse_ini_file("../config/config.ini");
-$path = $paths["database_path"];
-$categories = new DAO($path);
+$categories = new DAO();
 $chemin = $categories->getCat(6)->getPath($categories);
 $last = $chemin[array_key_last($chemin)];
 foreach ($chemin as $nom) {
