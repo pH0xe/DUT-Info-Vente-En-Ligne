@@ -27,6 +27,14 @@
       return $result[0];
     }
 
+    function getAllCat() : array {
+        $req = "SELECT * FROM categorie";
+        $sth = $this->db->query($req);
+
+        $result=array();
+        $result = $sth->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE, 'Categorie');
+        return $result;
+    }
 
 }
 ?>
