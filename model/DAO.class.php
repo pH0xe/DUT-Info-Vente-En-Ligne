@@ -1,0 +1,34 @@
+<?php
+  require_once '../model/Article.class.php';
+  require_once '../model/Categorie.class.php';
+
+  /**
+   *
+   */
+  class DAO
+  {
+    $config = parse_ini_file('../config/config.ini');
+    private $db;
+    private $database = "sqlite:".$config['database_path'];
+
+    function __construct()
+    {
+      try {
+        $this->db = new PDO($this->database);
+      } catch (PDOException $e) {
+        die("Erreur de connexion : ".$e->getMessage());
+      }
+    }
+
+    public function getCat($id) : Categorie
+    {
+      $req = "SELECT * FROM categorie where id = $id";
+      $sth = $this->db->query($req);
+      $result=array();
+      $result = $sth->fetchAll(PDO::FETCH_CLASS, 'Categorie');
+
+      return $result[0];
+    }
+  }
+
+?>
