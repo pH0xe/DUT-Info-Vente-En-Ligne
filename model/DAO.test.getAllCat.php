@@ -1,13 +1,13 @@
 <?php
-  include("DAO.class.php");
+  require_once("DAO.class.php");
 
-  $paths = parse_ini_file("../config/config.ini");
-  $path = $paths["database_path"];
-  $categories = new DAO($path);
+  $categories = new DAO();
 
-  $cats = $categories.getAllCat();
+  $cats = $categories->getAllCat();
   $i = 1;
   foreach ($cats as $key => $value) {
-    print("categprie $i : $value");
+    print("categorie $i : ".$value->getNom());
+    print("\n");
+    $i +=1;
   }
  ?>

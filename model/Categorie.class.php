@@ -1,5 +1,5 @@
 <?php
-include "DAO.class.php";
+require_once "DAO.class.php";
 
 class Categorie{
   private $id;

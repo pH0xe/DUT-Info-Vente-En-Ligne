@@ -1,5 +1,5 @@
 <?php
-include("Categorie.class.php");
+require_once("Categorie.class.php");
 
 $categories = new DAO();
 $chemin = $categories->getCat(6)->getPath($categories);
