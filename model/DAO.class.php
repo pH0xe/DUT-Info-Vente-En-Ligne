@@ -29,7 +29,7 @@
       return $result[0];
     }
 
-    function getAllCat() : array {
+    public function getAllCat() : array {
         $req = "SELECT * FROM categorie";
         $sth = $this->db->query($req);
 
@@ -38,5 +38,12 @@
         return $result;
     }
 
+    public function getArt($ref) : Article{
+      $req = "SELECT * FROM article WHERE ref = $ref";
+      $sth = $this->db->query($req);
+      $result=array();
+      $result = $sth->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE, 'Article');
+      return $result[0];
+    }
 }
 ?>
