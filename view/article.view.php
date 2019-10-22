@@ -12,7 +12,7 @@
         <img src="../view/img/logo.png" alt="Logo du site chez violette">
         <h1>Chez Violette</h1>
       </div>
-      <img src="../view/img/panier.png" alt="image de panier">
+      <a href="#"> <img src="../view/img/panier.png" alt="image de panier"></a>
     </header>
     <nav>
       <?php foreach ($categories as $key => $value): ?>
