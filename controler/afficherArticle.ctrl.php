@@ -21,15 +21,20 @@
     $cat = 1;
     $catPath = "Home";
   }
-
+  $paths = parse_ini_file("../config/config.ini");
+  $path = $paths["image_path"];
   $categories = $dao->getAllCat();
+  $imgArticle = $path.$article->getImage();
 
-
+  $view->assign("imgArticle", $imgArticle);
   $view->assign("categories", $categories);
   $view->assign("ref", $ref);
   $view->assign("article", $article);
   $view->assign("cat", $cat);
   $view->assign("catPath", $catPath);
+  $view->assign("titreArticle", $article->getLibelle());
+  $view->assign("descrArticle", $article->getDescription());
+  $view->assign("prixArticle", $article->getPrix());
 
   $view->display("article.view.php");
  ?>

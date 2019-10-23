@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Chez Violette</title>
-    <link rel="stylesheet" href="../view/style/artcle.css">
-    <link rel="stylesheet" href="style/artcle.css">
+    <link rel="stylesheet" href="../view/style/article.css">
+    <!-- <link rel="stylesheet" href="style/article.css"> -->
   </head>
   <body>
     <header>
@@ -14,15 +14,21 @@
       </div>
       <a href="#"> <img src="../view/img/panier.png" alt="image de panier"></a>
     </header>
-    <nav>
-      <?php foreach ($categories as $key => $value): ?>
-        <ul>
-          <li><?php $value ?></li>
-        </ul>
-      <?php endforeach; ?>
-    </nav>
-    <section>
-      <img src="<?= $imgArticle ?>" alt="Image de l'article à afficher">
-    </section>
+    <div class="container">
+      <nav>
+        <?php foreach ($categories as $key => $value): ?>
+          <ul>
+            <li><a href="#"><?= $value->getNom(); ?></a></li>
+          </ul>
+        <?php endforeach; ?>
+      </nav>
+      <section>
+        <h2><?= $titreArticle ?></h2>
+        <img src="<?= $imgArticle ?>" alt="Image de l'article à afficher">
+        <p><?= $descrArticle ?></p>
+        <p>Prix : <?= $prixArticle ?></p>
+        <a href="#"><img src="../view/img/panier.png" alt="">Ajouter au panier !</a>
+      </section>
+    </div>
   </body>
 </html>

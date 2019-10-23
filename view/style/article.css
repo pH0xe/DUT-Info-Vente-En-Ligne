@@ -1,3 +1,63 @@
 body {
-  background-color: magenta;
+ background-color: #e4e4e4;
+ width: 90%;
+ margin : auto;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 10%;
+  position:absolute;
+  left : 0;
+  top : 0;
+}
+header div{
+  display: flex;
+}
+header>a{
+  width: 3%;
+}
+header>a>img{
+  width: 100%;
+}
+.container{
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+}
+nav{
+  border: 1px solid black;
+  align-self: baseline;
+  position: fixed;
+  left : 0;
+  top : 50%;
+  bottom : auto;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+
+}
+nav li{
+  list-style-type: none;
+
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  border : 1px solid black;
+  background-color: rgb(84, 75, 113);
+  display: block;
+}
+nav a:hover{
+    background-color: rgb(74, 60, 119);
+}
+section a img {
+  width: 3%;
+  margin-right: 2%;
+}
+section {
+
 }
