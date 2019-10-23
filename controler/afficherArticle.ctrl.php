@@ -36,6 +36,5 @@
   $view->assign("descrArticle", $article->getDescription());
   $view->assign("prixArticle", $article->getPrix());
 
-  $view->display("header.view.html");
   $view->display("article.view.php");
  ?>
