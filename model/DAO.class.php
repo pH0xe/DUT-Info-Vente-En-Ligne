@@ -38,5 +38,22 @@
         return $result;
     }
 
+    function getAllFille($pere) : array {
+      $req = "SELECT id FROM categorie WHERE pere = $pere";
+      $sth = $this->db->query($req);
+
+      $result = array();
+      $result = $sth->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE, 'Categorie');
+      return $result;
+    }
+
+    function getAllArt($categorie) : array {
+      $categorie = strval($categorie);
+      $req = "SELECT * FROM article WHERE categorie = $categorie ";
+      $sth = $this->db->query($req);
+      $result = array();
+      $result = $sth->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE, 'Article');
+      return $result;
+    }
 }
 ?>
