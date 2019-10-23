@@ -6,4 +6,4 @@
 200411|Montre de luxe cadre argent|6|90|6.jpg|Montre de luxe fabriqué en France
 200412|Parapluie|6|0.5|7.jpg|Parapluie fabriqué en Chine
 200413|Casquette|6|6|8.jpg|Casquette de golf
-200414|Statut jeff koons|3|5000000|9.jpg|Oeuvre authentique avec certificat du célébre artiste
+200414|Statut jeff koons|3|5 000 000|9.jpg|Oeuvre authentique avec certificat du célébre artiste

@@ -3,26 +3,26 @@
   <head>
     <meta charset="utf-8">
     <title>Chez Violette</title>
-    <link rel="stylesheet" href="../view/style/artcle.css">
-    <link rel="stylesheet" href="style/artcle.css">
+    <link rel="stylesheet" href="../view/style/article.css">
+    <!-- <link rel="stylesheet" href="style/article.css"> -->
   </head>
   <body>
-    <header>
-      <div class="">
-        <img src="../view/img/logo.png" alt="Logo du site chez violette">
-        <h1>Chez Violette</h1>
-      </div>
-      <a href="#"> <img src="../view/img/panier.png" alt="image de panier"></a>
-    </header>
-    <nav>
-      <?php foreach ($categories as $key => $value): ?>
+    <div class="container">
+      <nav>
         <ul>
-          <li><?php $value ?></li>
+        <?php foreach ($categories as $key => $value): ?>
+          <li><a href="#"><?= $value->getNom(); ?></a></li>
+        <?php endforeach; ?>
         </ul>
-      <?php endforeach; ?>
-    </nav>
-    <section>
-      <img src="<?= $imgArticle ?>" alt="Image de l'article à afficher">
-    </section>
+      </nav>
+      <section>
+        <h2><?= $titreArticle ?></h2>
+        <img src="<?= $imgArticle ?>" alt="Image de l'article à afficher">
+        <h3>Description de l'article : </h3>
+        <p><?= $descrArticle ?></p>
+        <p>Prix : <?= $prixArticle ?> €</p>
+        <a href="#"><img src="../view/img/panier.png" alt="">Ajouter au panier !</a>
+      </section>
+    </div>
   </body>
 </html>
