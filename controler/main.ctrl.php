@@ -5,9 +5,9 @@
   $DAO = new DAO();
   $view = new View();
   $idCatCat = array();
-  if isset($_GET('categorie')){
+  if (isset($_GET['categorie'])){
     $categories = $_GET('categorie');
-    $idCat[] = $DAO->getCat($categories)
+    $idCat[] = $DAO->getCat($categories);
     $catFille = array();
     $catFille = $DAO->getAllFille($categories);
     foreach ($catFille as $key => $value) {
@@ -23,9 +23,9 @@
   $article = array();
   foreach ($idCat as $key => $value) {
     $idArt = array();
-      $idArt = $DAO->getAllArt($idCat);
+      $idArt = $DAO->getAllArt($value);
       foreach ($idArt as $key2 => $value2) {
-        $article[] = $value2->getId();
+        $article[] = $value2->getRef();
       }
   }
   $view->assign($categories);
