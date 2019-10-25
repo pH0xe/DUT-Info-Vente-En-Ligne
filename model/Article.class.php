@@ -13,32 +13,32 @@ class Article
 
   public function getRef() : int
   {
-    return $ref;
+    return $this->ref;
   }
 
   public function getLibelle() : string
   {
-    return $libelle;
+    return $this->libelle;
   }
 
   public function getCategorie() : int
   {
-    return $categorie;
+    return $this->categorie;
   }
 
   public function getPrix() : float
   {
-    return $prix;
+    return $this->prix;
   }
 
   public function getImage() : string
   {
-    return $image;
+    return $this->image;
   }
 
   public function getDescription() : string
   {
-    return $description;
+    return $this->description;
   }
 }
 
