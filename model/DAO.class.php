@@ -45,5 +45,29 @@
       $result = $sth->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE, 'Article');
       return $result[0];
     }
+
+    public function getAllFille($pere) : array {
+      $req = "SELECT id FROM categorie WHERE pere = $pere";
+      $sth = $this->db->query($req);
+
+      $result = array();
+      $result = $sth->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE, 'Categorie');
+      return $result;
+    }
+
+    public function getAllArt(int $categorie) : array {
+      $categorie = strval($categorie);
+      $req = "SELECT * FROM article WHERE categorie = $categorie ";
+      $sth = $this->db->query($req);
+      $result = array();
+      $result = $sth->fetchAll(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE, 'Article');
+      return $result;
+    }
+    public function estTropGrand(int $id) : bool {
+      $req  = "SELECT max(id) FROM Categorie";
+      $sth = $this->db->query($req);
+      $result = $sth->fetch(PDO::FETCH_NUM);
+      return ($result[0] > $id);
+    }
 }
 ?>
