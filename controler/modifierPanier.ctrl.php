@@ -18,12 +18,12 @@
         }
         else if ($type == "supprimer"){
           $panier->supprimer($ref);
-          header('Location: ../controler/main.ctrl.php');
+          header('Location: ../controler/afficherPanier.ctrl.php');
         }
-        else if ($type = "vider"){
-          header('Location: ../controler/main.ctrl.php');
-          $panier->vider($ref);
-        }
+    }
+    else if ($type = "vider"){
+      $panier->vider();
+      header('Location: ../controler/afficherPanier.ctrl.php');
     }
      ?>
   </body>

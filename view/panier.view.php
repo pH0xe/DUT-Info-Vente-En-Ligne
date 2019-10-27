@@ -5,8 +5,13 @@
     <title></title>
   </head>
   <body>
-    <?php foreach ($panier => $value) ?>
-      <p><?= $panier?></p>
-  <?php  } ?>
+    <?php if($vide){ ?>
+      <p>Panier vide</p>
+    <?php }else{ ?>
+  <?php  foreach ($_SESSION['panier']['article'] as $key => $value) { ?>
+      <div class="article">
+          <p><?= $value->getLibelle()?> x<?= $_SESSION['panier']['quantite'][$key]?> <?php $panier->boutonSupprimer($value->getRef()); ?></p>
+      </div>
+  <?php  } $panier->boutonVider();} ?>
   </body>
 </html>

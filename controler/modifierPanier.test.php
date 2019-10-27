@@ -8,7 +8,7 @@
     <?php
     include_once("../model/Panier.class.php");
     $panier = new Panier();
-    $panier->bouton(200412,"ajouter");
+    $panier->boutonAjouter(200412);
      ?>
   </body>
 </html>

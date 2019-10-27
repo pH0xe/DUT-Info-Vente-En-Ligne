@@ -4,11 +4,13 @@ include_once("../model/DAO.class.php");
 
 class Panier{
 
+
   function __construct(){
     if (!isset($_SESSION['panier'])){
       $_SESSION['panier'] = array();
       $_SESSION['panier']['quantite'] = array();
       $_SESSION['panier']['article'] = array();
+
     }
   }
 
@@ -63,9 +65,18 @@ class Panier{
     $_SESSION['panier']['article'] = array();
   }
 
-public function bouton($ref, $type){
-  echo"<INPUT TYPE=\"BUTTON\" value=\"PAYER\" ONCLICK=window.location.href='../controler/modifierPanier.ctrl.php?ref=$ref&type=$type'";
+public function boutonAjouter($ref){
+  echo"<INPUT TYPE=\"BUTTON\" value=\"PAYER\" ONCLICK=window.location.href='../controler/modifierPanier.ctrl.php?ref=$ref&type=ajouter'>";
 }
+
+public function boutonSupprimer($ref){
+  echo"<INPUT TYPE=\"BUTTON\" value=\"SUPPRIMER\" ONCLICK=window.location.href='../controler/modifierPanier.ctrl.php?ref=$ref&type=supprimer'>";
+}
+
+public function boutonVider(){
+  echo"<INPUT TYPE=\"BUTTON\" value=\"VIDER \" ONCLICK=window.location.href='../controler/modifierPanier.ctrl.php?type=vider'>";
+}
+
 
 }
  ?>
