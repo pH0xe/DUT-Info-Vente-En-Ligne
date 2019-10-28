@@ -5,18 +5,14 @@
     <title>Chez Violette</title>
     <link rel="stylesheet" href="../view/style/article.css">
     <link rel="stylesheet" href="../view/style/header.css">
-    <!-- <link rel="stylesheet" href="style/article.css"> -->
+    <link rel="stylesheet" href="../view/style/nav.css">
+    <link rel='icon' href='../favicon.ico' type='image/x-icon'/ >
   </head>
   <body>
     <?php include('../view/header.view.html'); ?>
+
     <div class="container">
-      <nav>
-        <ul>
-        <?php foreach ($categories as $key => $value): ?>
-          <li><a href="#"><?= $value->getNom(); ?></a></li>
-        <?php endforeach; ?>
-        </ul>
-      </nav>
+        <?php include('../view/nav.view.php'); ?>
       <section>
         <h2><?= $titreArticle ?></h2>
         <img src="<?= $imgArticle ?>" alt="Image de l'article à afficher">

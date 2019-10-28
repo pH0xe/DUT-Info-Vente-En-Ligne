@@ -5,27 +5,27 @@
   $DAO = new DAO();
   $view = new View();
   $idCat = array();
-  $categories = array();
+  $categorie = array();
   if (isset($_GET['categorie'])){
-    if ($DAO->estTropGrand($_GET['categorie']) && (intval(($_GET['categorie'])) > 0)) {
-    $categories = $_GET['categorie'];
-    $cat = $DAO->getCat($categories);
+    if ($DAO->estTropGrand($_GET['categorie']) && (intval(($_GET['categorie'])) > 1)) {
+    $categorie = $_GET['categorie'];
+    $cat = $DAO->getCat($categorie);
     $idCat[] = $cat->getId();
     $catFille = array();
-    $catFille = $DAO->getAllFille($categories);
+    $catFille = $DAO->getAllFille($categorie);
     foreach ($catFille as $key => $value) {
         $idCat[] = $value->getId();
       }
      }
      else{
-       $categories = $DAO->getAllCat();
-       foreach ($categories as $key => $value) {
+       $categorie = $DAO->getAllCat();
+       foreach ($categorie as $key => $value) {
          $idCat[] = $value->getId();
        }
      }
   }else{
-    $categories = $DAO->getAllCat();
-    foreach ($categories as $key => $value) {
+    $categorie = $DAO->getAllCat();
+    foreach ($categorie as $key => $value) {
       $idCat[] = $value->getId();
     }
   }
@@ -37,10 +37,9 @@
         $article[] = $value2;
       }
   }
-
-  $view->assign("categories",$categories);
+  $view->assign("categories", $DAO->getAllCat());
+  $view->assign("categorie",$categorie);
   $view->assign("article",$article);
-  //$view->display("header.view.html");
   $view->display("../view/main.view.php");
 
  ?>

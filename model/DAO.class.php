@@ -67,7 +67,7 @@
       $req  = "SELECT max(id) FROM Categorie";
       $sth = $this->db->query($req);
       $result = $sth->fetch(PDO::FETCH_NUM);
-      return ($result[0] > $id);
+      return ($result[0] >= $id);
     }
 }
 ?>

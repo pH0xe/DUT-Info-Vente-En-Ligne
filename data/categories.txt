@@ -4,3 +4,4 @@
 4|Décoration de noël intérieur|3
 5|Vêtement|1
 6|Accessoire|5
+7|Jouer|1

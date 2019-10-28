@@ -2,38 +2,9 @@ body {
  background-color: #e8e8e8;
 }
 .container{
-  margin-top: 2%;
   display: flex;
   justify-content: space-between;
-}
-nav{
-  border: 1px solid black;
-  border-radius: 5px;
-  align-self: baseline;
-  margin-left: 1%;
-}
-nav ul {
-  margin: 0;
-  padding: 0;
-
-}
-nav li{
-  list-style-type: none;
-
-}
-nav a {
-  text-decoration: none;
-  color: black;
-  border-bottom: 1px solid black;
-  background-color: rgb(115, 116, 201);
-  display: block;
-  padding: 5px 8px;
-}
-nav li:last-child a{
-  border-bottom: none;
-}
-nav a:hover{
-    background-color: rgba(115, 116, 201, 0.71);
+  margin-top: 2%;
 }
 section {
   margin: auto;

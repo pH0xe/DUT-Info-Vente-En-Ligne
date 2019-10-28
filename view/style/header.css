@@ -12,6 +12,15 @@ header{
 }
 header div{
   display: flex;
+  align-items: center;
+  height: 10%;
+}
+header h1{
+    height: fit-content;
+}
+header>div>img{
+    width: 10%;
+    height: 10%;
 }
 header>a{
   display: block;

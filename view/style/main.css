@@ -1,0 +1,31 @@
+.container{
+    margin-top: 2%;
+}
+nav{
+    float : left;
+}
+.allArt{
+  display: flex;
+  flex-wrap: wrap;
+}
+.allArt img{
+  width: 200px;
+  height: 200px;
+}
+.article{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 5% 4%;
+    padding-bottom: 1%;
+    margin: 2% 2%;
+    background-color: #e8e8e8;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+.article p {
+    background-color: #7374c9;
+    padding: 2% 3%;
+    border-radius: 5px;
+}
