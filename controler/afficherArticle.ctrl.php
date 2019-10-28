@@ -2,9 +2,11 @@
 
   require_once("../framework/view.class.php");
   require_once("../model/DAO.class.php");
+  require_once("../model/Panier.class.php");
 
   $dao = new DAO();
   $view = new View();
+  $panier = new Panier();
 
   if (isset($_GET["ref"])) {
     $ref = $_GET["ref"];
@@ -35,6 +37,7 @@
   $view->assign("titreArticle", $article->getLibelle());
   $view->assign("descrArticle", $article->getDescription());
   $view->assign("prixArticle", $article->getPrix());
+  $view->assign("panier", $panier);
 
   $view->display("article.view.php");
  ?>

@@ -19,7 +19,7 @@
         <h3>Description de l'article : </h3>
         <p><?= $descrArticle ?></p>
         <p>Prix : <?= $prixArticle ?> €</p>
-        <a href="#"><img src="../view/img/panier.png" alt="">Ajouter au panier !</a>
+        <?= $panier->boutonAjouter($ref); ?>
       </section>
     </div>
   </body>
