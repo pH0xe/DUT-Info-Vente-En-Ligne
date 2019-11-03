@@ -6,7 +6,7 @@
 200411|Montre de luxe cadre argent|6|90|6.jpg|Montre de luxe fabriqué en France
 200412|Parapluie|6|0.5|7.jpg|Parapluie fabriqué en Chine
 200413|Casquette|6|6|8.jpg|Casquette de golf
-200414|Statut jeff koons|3|5 000 000|9.jpg|Oeuvre authentique avec certificat du célébre artiste
+200414|Statut jeff koons|3|5000000|9.jpg|Oeuvre authentique avec certificat du célébre artiste
 200415|Chaussures reebok|5|25|10.jpg|Chaussure (presque) neuve. Couleur violet, cyan et blanc.
 200416|Miroir art déco|3|150|11.jpg|\"Miroir, mon beau miroir, dis moi qui est la plus belle\" ! Miroir idéal pour la célébre réplique.
 200417|Peluche aubergine|7|10|12.jpg|Peluche aubergine souriante !
