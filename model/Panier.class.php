@@ -66,7 +66,7 @@ class Panier{
   }
 
 public function boutonAjouter($ref){
-  echo"<INPUT TYPE=\"BUTTON\" value=\"PAYER\" ONCLICK=window.location.href='../controler/modifierPanier.ctrl.php?ref=$ref&type=ajouter'>";
+  echo"<INPUT TYPE=\"BUTTON\" value=\"AJOUTER AU PANIER\" ONCLICK=window.location.href='../controler/modifierPanier.ctrl.php?ref=$ref&type=ajouter'>";
 }
 
 public function boutonSupprimer($ref){
