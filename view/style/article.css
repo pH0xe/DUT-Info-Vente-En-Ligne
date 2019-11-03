@@ -39,3 +39,7 @@ section a img {
   width: 3%;
   margin-right: 2%;
 }
+input{
+  display: block;
+  margin: auto;
+}
