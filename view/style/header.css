@@ -31,3 +31,22 @@ header>a>img{
   width: 50%;
   margin-top: 30%;
 }
+
+.panier{
+  color: white;
+  text-decoration: none;
+}
+
+.nbArt{
+  text-align: center;
+  display: inline-block;
+  margin-left: -10px;
+  font-size: 1em;
+  font-weight: bold;
+  background:orange;
+  border-radius:50%;
+  width:20px;;
+  height:20px;
+  border:2px
+
+}

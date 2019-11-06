@@ -4,9 +4,11 @@
   require_once("../model/DAO.class.php");
   require_once("../model/Panier.class.php");
 
+  session_start();
   $dao = new DAO();
   $view = new View();
   $panier = new Panier();
+  $vide = (count($_SESSION['panier']['article']) == 0);
 
   if (isset($_GET["ref"])) {
     $ref = $_GET["ref"];
@@ -38,6 +40,7 @@
   $view->assign("descrArticle", $article->getDescription());
   $view->assign("prixArticle", $article->getPrix());
   $view->assign("panier", $panier);
+  $view->assign("vide", $vide);
 
   $view->display("article.view.php");
  ?>

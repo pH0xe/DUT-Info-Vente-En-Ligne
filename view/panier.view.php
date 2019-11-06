@@ -22,7 +22,7 @@
             <?php  } ?>
             <p>Prix Total : <?= $prixTot?>€</p>
             <?= $panier->boutonVider(); ?>
-            <INPUT class="payer" TYPE="BUTTON" value="PAYER " ONCLICK=window.location.href='../controler/afficherPanier.ctrl.php'>
+            <INPUT class="payer" TYPE="BUTTON" value="PAYER " ONCLICK=window.location.href='../controler/affichePanier.ctrl.php'>
         </div>
     </div>
 </body>
