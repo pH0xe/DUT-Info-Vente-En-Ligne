@@ -8,6 +8,7 @@
   $view = new View();
   $idCat = array();
   $categorie = array();
+  $panier = new Panier();
   $vide = (count($_SESSION['panier']['article']) == 0);
 
   if (isset($_GET['categorie'])){
