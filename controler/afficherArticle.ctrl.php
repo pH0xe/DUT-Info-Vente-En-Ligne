@@ -10,6 +10,7 @@
   $panier = new Panier();
   $vide = (count($_SESSION['panier']['article']) == 0);
 
+  // On verifie que l'article existe dans la BD si il n'existe pas on redirige vers une page d'erreur.
   if (isset($_GET["ref"])) {
     $ref = $_GET["ref"];
     $article = $dao->getArt($ref);
@@ -18,6 +19,7 @@
     die();
   }
 
+  // Si une categories est indiqué on recupere le chemin de cet article sinon on affiche juste "home"
   if (isset($_GET["cat"])){
     $cat = $dao->getCat($_GET["cat"]);
     $catPath =  $cat->getPath($dao);
@@ -25,6 +27,8 @@
     $cat = 1;
     $catPath = "Home";
   }
+
+
   $paths = parse_ini_file("../config/config.ini");
   $path = $paths["image_path"];
   $categories = $dao->getAllCat();

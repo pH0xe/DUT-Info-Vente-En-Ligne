@@ -11,6 +11,7 @@
   $panier = new Panier();
   $vide = (count($_SESSION['panier']['article']) == 0);
 
+  //on verifie la categorie qui est indiqué (si aucune on affiche tout les article) existe. si elle existe on affiche les article correspondant, sinon on recupere tout les articles.
   if (isset($_GET['categorie'])){
     if ($DAO->estTropGrand($_GET['categorie']) && (intval(($_GET['categorie'])) > 1)) {
     $categorie = $_GET['categorie'];

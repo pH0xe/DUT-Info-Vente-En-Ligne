@@ -13,11 +13,13 @@
     $view->assign("categories", $categories);
     $view->assign("vide", $vide);
 
+    // Si aucun etat est indiqué on considére que le panier est vide et on invite l'utilisateur a retourner acheter des produits.
     if (!isset($_GET["etat"])){
         $view->display("panierVide.view.php");
     } else {
         $etat = $_GET["etat"];
 
+        // permet d'ouvrir differente fenetre en fonction de l'étape de la commande. on inscrit differente variable en fonction de l'étape.
         if ($etat === "information") {
             $prixTotal = 0;
             foreach ($_SESSION['panier']['article'] as $key => $value) {

@@ -18,6 +18,7 @@ class Categorie{
     return $this->pere;
   }
 
+//Calcul du chemin de la categorie.
   function getPath($dao){
     $path = array();
     $curr = $this;
