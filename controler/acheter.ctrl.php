@@ -35,10 +35,17 @@
                 $pub = false;
             }
 
+            $listArticle = array();
+            $listQts = array();
             $prixTotal = 0;
             foreach ($_SESSION['panier']['article'] as $key => $value) {
                 $prixTotal = $value->getPrix() * $_SESSION['panier']['quantite'][$key] + $prixTotal;
+                $listArticle[] = $value;
+                $listQts[] = $_SESSION['panier']['quantite'][$key];
             }
+
+            $panier->vider();
+
 
             $nomPrenom = $_GET['nom']." ".$_GET['prenom'];
             $mail = $_GET['mail'];
@@ -46,6 +53,8 @@
             $view->assign('pub', $pub);
             $view->assign('mail', $mail);
             $view->assign('prixTotal', $prixTotal);
+            $view->assign("listArticle", $listArticle);
+            $view->assign("listQts", $listQts);
 
             $view->display("recap.view.php");
         }

@@ -20,12 +20,14 @@
                 Vous avez accepté de recevoir de la publicité de notre part. <br>
             <?php } ?>
             Rappel de la commande :</p>
-        <?php  foreach ($_SESSION['panier']['article'] as $key => $value) { ?>
+        <?php $i = 0;?>
+        <?php  foreach ($listArticle as $value) { ?>
             <div class="article">
-                <p><?= $value->getLibelle()?> x<?= $_SESSION['panier']['quantite'][$key]?></p>
+                <p><?= $value->getLibelle()?> x<?= $listQts[$i]?></p>
+                <?php $i = $i +1;?>
             </div>
         <?php  } ?>
-        <INPUT class="" TYPE="BUTTON" value="Retour à l'accueil " ONCLICK=window.location.href='../controler/modifierPanier.ctrl.php?type=finCommande'>
+        <INPUT class="" TYPE="BUTTON" value="Retour à l'accueil " ONCLICK=window.location.href='../controler/main.ctrl.php'>
     </section>
 </body>
 </html>

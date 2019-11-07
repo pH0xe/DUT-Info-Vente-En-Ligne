@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="021c4b79-e347-4ffd-b461-4b2a878f6963" name="Default Changelist" comment="correction d'erreurs de presentation dans formulaire">
-      <change beforePath="$PROJECT_DIR$/view/formulaireRenseignement.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/formulaireRenseignement.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controler/acheter.ctrl.php" beforeDir="false" afterPath="$PROJECT_DIR$/controler/acheter.ctrl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/recap.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/recap.view.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +71,7 @@
       <option name="presentableId" value="Default" />
       <updated>1573052324252</updated>
       <workItem from="1573052325577" duration="7561000" />
-      <workItem from="1573114912098" duration="7198000" />
+      <workItem from="1573114912098" duration="8316000" />
     </task>
     <servers />
   </component>
