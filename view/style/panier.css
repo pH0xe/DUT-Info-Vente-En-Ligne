@@ -1,5 +1,6 @@
 nav{
     float: left;
+    margin-top: 1%;
 }
 
 .article{
@@ -42,5 +43,8 @@ p input{
     padding-right: 5px;
     text-decoration: none;
     color: black;
+}
+h2{
+    text-align: center;
 }
 
