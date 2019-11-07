@@ -1,37 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="021c4b79-e347-4ffd-b461-4b2a878f6963" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/controler/acheter.ctrl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/achatInfo.view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/formulaireRenseignement.view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/recap.view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/style/achatInfo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/style/recap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/style/renseignement.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controler/modifierPanier.ctrl.php" beforeDir="false" afterPath="$PROJECT_DIR$/controler/modifierPanier.ctrl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/article.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/article.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/header.view.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/header.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/main.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/main.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/panier.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/panier.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/panierVide.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/panierVide.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/style/panier.css" beforeDir="false" afterPath="$PROJECT_DIR$/view/style/panier.css" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GradleLocalSettings">
-    <option name="projectSyncType">
-      <map>
-        <entry key="D:/Programmes/cygwin/home/julie/Documents/dev/modding/Aide au dev/template/default/forge 1.12.2" value="PREVIEW" />
-        <entry key="D:/Programmes/cygwin/home/julie/Documents/dev/modding/Aide au dev/template/forge 1.12.2" value="PREVIEW" />
-        <entry key="D:/Programmes/cygwin/home/julie/Documents/dev/modding/Aide au dev/template/forge-1.12.2-14.23.5.2768-mdk" value="PREVIEW" />
-        <entry key="D:/Programmes/cygwin/home/julie/Documents/dev/modding/NoMoreOresMoreTools" value="PREVIEW" />
-        <entry key="D:/Programmes/cygwin/home/julie/Documents/dev/modding/OreSquid" value="PREVIEW" />
-        <entry key="D:/Programmes/cygwin/home/julie/Documents/dev/modding/OreSquidMod" value="PREVIEW" />
-        <entry key="D:/Programmes/cygwin/home/julie/Documents/dev/modding/template/default/forge-1.14.4-28.0.11-mdk" value="PREVIEW" />
-        <entry key="F:/dev/modding/no_more_ore_more_tools" value="PREVIEW" />
-        <entry key="F:/dev/modding/template/forge-1.14.4-28.0.11-mdk" value="PREVIEW" />
-        <entry key="F:/dev/modding/test" value="PREVIEW" />
-      </map>
-    </option>
   </component>
   <component name="ProjectId" id="1TFOLzy3ZuEyMvqiX3blEOjDAX2" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.30232558" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="021c4b79-e347-4ffd-b461-4b2a878f6963" name="Default Changelist" comment="" />
+      <created>1573052324252</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1573052324252</updated>
+      <workItem from="1573052325577" duration="7561000" />
+      <workItem from="1573114912098" duration="5079000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

@@ -21,9 +21,15 @@
           header('Location: ../controler/afficherPanier.ctrl.php');
         }
     }
-    else if ($type = "vider"){
-      $panier->vider();
-      header('Location: ../controler/afficherPanier.ctrl.php');
+    else if (isset($_GET['type'])){
+        $type = $_GET['type'];
+        if ($type == "vider") {
+            $panier->vider();
+            header('Location: ../controler/afficherPanier.ctrl.php');
+        }else if ($type == "finCommande"){
+            $panier->vider();
+            header('Location: ../controler/main.ctrl.php');
+        }
     }
      ?>
   </body>

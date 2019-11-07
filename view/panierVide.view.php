@@ -8,7 +8,7 @@
       <link rel="stylesheet" href="../view/style/panier.css">
   </head>
   <body>
-    <?php include("../view/header.view.html"); ?>
+    <?php include("../view/header.view.php"); ?>
     <div class="container">
         <?php include("../view/nav.view.php"); ?>
         <div>

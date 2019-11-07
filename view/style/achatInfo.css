@@ -1,0 +1,31 @@
+nav {
+    float: left;
+    margin-top: 1%;
+}
+h2{
+    width: 50%;
+    margin: auto;
+    margin-top: 1%;
+    text-align: center;
+}
+.article{
+    background-color: #e8e8e8;
+    width: 50%;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 1%;
+    text-align: center;
+}
+
+section{
+    width: 50%;
+    margin: auto;
+    margin-top: 1%;
+    text-align: center;
+}
+
+section input{
+    font-size: 1em;
+}
+

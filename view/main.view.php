@@ -9,7 +9,7 @@
     <link rel='icon' href='../favicon.ico' type='image/x-icon'/ >
   </head>
   <body>
-    <?php include "../view/header.view.html"?>
+    <?php include "../view/header.view.php" ?>
     <div class="container">
 
         <?php include "../view/nav.view.php" ?>

@@ -8,22 +8,31 @@
     <link rel="stylesheet" href="../view/style/panier.css">
 </head>
 <body>
-    <?php include("../view/header.view.html"); ?>
+    <?php include("../view/header.view.php"); ?>
 
-    <div class="container">
         <?php include("../view/nav.view.php"); ?>
 
         <div>
             <?php $prixTot = 0; foreach ($_SESSION['panier']['article'] as $key => $value) { ?>
                 <div class="article">
                   <?php $prixTot = $value->getPrix() * $_SESSION['panier']['quantite'][$key] + $prixTot ?>
-                    <p><a class="objet" href="afficherArticle.ctrl.php?ref=<?= $value->getRef(); ?>"><img src="../data/img/<?= $value->getImage(); ?>", height="50", width="50"><?= $value->getLibelle()?></a> <?= $value->getPrix()?>€ x<?= $_SESSION['panier']['quantite'][$key]?> = <?=$value->getPrix() * $_SESSION['panier']['quantite'][$key] ?>€ <?php $panier->boutonSupprimer($value->getRef()); ?></p>
+                    <p>
+                        <a class="objet" href="afficherArticle.ctrl.php?ref=<?= $value->getRef(); ?>">
+                            <img src="../data/img/<?= $value->getImage(); ?>", height="50", width="50">
+                            <?= $value->getLibelle()?>
+                        </a>
+                        <?= $value->getPrix()?>€ x<?= $_SESSION['panier']['quantite'][$key]?> = <?=$value->getPrix() * $_SESSION['panier']['quantite'][$key] ?>€
+                        <?php $panier->boutonSupprimer($value->getRef()); ?>
+                    </p>
                 </div>
             <?php  } ?>
-            <p>Prix Total : <?= $prixTot?>€</p>
-            <?= $panier->boutonVider(); ?>
-            <INPUT class="payer" TYPE="BUTTON" value="PAYER " ONCLICK=window.location.href='../controler/affichePanier.ctrl.php'>
+            <div class="article">
+                <p id="prixTotal">Prix Total : <?= $prixTot?>€</p>
+                <div>
+                <?= $panier->boutonVider(); ?>
+                <INPUT class="payer" TYPE="BUTTON" value="PASSER COMMANDE " ONCLICK=window.location.href='../controler/acheter.ctrl.php?etat=information'>
+                </div>
+            </div>
         </div>
-    </div>
 </body>
 </html>
