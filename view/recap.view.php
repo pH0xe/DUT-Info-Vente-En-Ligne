@@ -17,7 +17,7 @@
         <p>Merci beaucoup <?= $nomPrenom ?> pour votre achat d'un montant de <?= $prixTotal ?>€. <br>
             Un email de confirmation a été envoyé à <?= $mail ?> <br>
             <?php if ($pub) {?>
-                Vous avez accepter de recevoir de la publicité de notre part. <br>
+                Vous avez accepté de recevoir de la publicité de notre part. <br>
             <?php } ?>
             Rappel de la commande :</p>
         <?php  foreach ($_SESSION['panier']['article'] as $key => $value) { ?>

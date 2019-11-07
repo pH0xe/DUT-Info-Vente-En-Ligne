@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="021c4b79-e347-4ffd-b461-4b2a878f6963" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/style/panier.css" beforeDir="false" afterPath="$PROJECT_DIR$/view/style/panier.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/achatInfo.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/achatInfo.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/recap.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/recap.view.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +28,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="pH0xe &lt;reig.julien@free.fr&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1TFOLzy3ZuEyMvqiX3blEOjDAX2" />
@@ -65,7 +71,7 @@
       <option name="presentableId" value="Default" />
       <updated>1573052324252</updated>
       <workItem from="1573052325577" duration="7561000" />
-      <workItem from="1573114912098" duration="5178000" />
+      <workItem from="1573114912098" duration="5917000" />
     </task>
     <servers />
   </component>

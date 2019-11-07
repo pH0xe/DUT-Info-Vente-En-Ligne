@@ -21,7 +21,7 @@
         </div>
     <?php  } ?>
     <section>
-        <p>Prix total de la commande  : <?= $prixTotal ?></p>
+        <p>Prix total de la commande  : <?= $prixTotal ?> €</p>
         <input type="button" value="Etape suivante" ONCLICK=window.location.href='../controler/acheter.ctrl.php?etat=renseignement'>
     </section>
 </body>
