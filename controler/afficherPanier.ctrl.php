@@ -14,6 +14,7 @@ $categories = $dao->getAllCat();
 
 $view->assign("panier", $panier);
 $view->assign("categories", $categories);
+$view->assign("vide", $vide);
 
 if ($vide){
  $view->display("panierVide.view.php");

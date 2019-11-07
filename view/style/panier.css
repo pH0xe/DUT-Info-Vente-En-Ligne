@@ -16,3 +16,21 @@
      background-color: #e8e8e8;
  }
 
+ p{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin: 0px;
+ }
+
+ .objet{
+     display: flex;
+     align-items: center;
+     padding-right: 5px;
+     text-decoration: none;
+     color: black;
+ }
+
+.supprimer{
+  margin-left: 5px;
+}
