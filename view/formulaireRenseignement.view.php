@@ -33,7 +33,7 @@
         <input type="password" id="crypt" placeholder="cryptogramme"> <br>
 
         <input type="checkbox" name="pub" id="pub">
-        <label for="pub" id="labPub">Cocher pour accepter de recevoir de la publicité de notre part</label>
+        <label for="pub" id="labPub">Cocher pour accepté de recevoir de la publicité de notre part</label>
 
 
 
