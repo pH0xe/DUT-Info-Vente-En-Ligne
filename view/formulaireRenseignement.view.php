@@ -27,10 +27,10 @@
         <input type="email" placeholder="Email" id="mail" name="mail" required> <br>
 
         <label for="carte">Votre numeros de carte :*</label>
-        <input type="password" id="carte" placeholder="n° carte" required> <br>
+        <input type="number" id="carte" placeholder="n° carte" required> <br>
 
         <label for="crypt">Votre 3 numeros de cryptogramme :*</label>
-        <input type="password" id="crypt" placeholder="cryptogramme" required> <br>
+        <input type="number" id="crypt" placeholder="cryptogramme" required> <br>
 
         <input type="checkbox" name="pub" id="pub">
         <label for="pub" id="labPub">Cocher pour accepté de recevoir de la publicité de notre part</label>
